@@ -1,0 +1,23 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.background{
+    -fx-background-color:#88D7CA;
+}
+
+.button{
+    -fx-background-color:#75C3D1;
+}
+
+.button:hover {
+    -fx-scale-y: 1.1;
+}
+.button:pressed:hover {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}

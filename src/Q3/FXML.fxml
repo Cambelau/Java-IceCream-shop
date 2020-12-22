@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="936.0" styleClass="background" stylesheets="@fxml.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Q3.FXMLController">
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#flavourBtn" prefHeight="54.0" prefWidth="274.0" text="Flavour">
+               <HBox.margin>
+                  <Insets left="50.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#toppingsBtn" prefHeight="54.0" prefWidth="295.0" text="Toppings">
+               <HBox.margin>
+                  <Insets left="50.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#syrupBtn" prefHeight="54.0" prefWidth="269.0" text="Syrup">
+               <HBox.margin>
+                  <Insets left="50.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane fx:id="midRoot" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="syrupRoot" prefHeight="347.0" prefWidth="685.0" visible="false">
+               <children>
+                  <Button layoutX="95.0" layoutY="239.0" mnemonicParsing="false" onAction="#chocSyruBtn" prefHeight="57.0" prefWidth="113.0" text="Chocolate" />
+                  <Button layoutX="254.0" layoutY="239.0" mnemonicParsing="false" onAction="#butSyrBtn" prefHeight="57.0" prefWidth="153.0" text="Butterscotch" />
+                  <Button layoutX="466.0" layoutY="239.0" mnemonicParsing="false" onAction="#berSyrBtn" prefHeight="57.0" prefWidth="129.0" text="Berry" />
+                  <ImageView fitHeight="136.0" fitWidth="187.0" layoutX="39.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/siropc.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="172.0" fitWidth="115.0" layoutX="273.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/siropa.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="172.0" fitWidth="138.0" layoutX="473.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/siropb.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="flavourRoot" prefHeight="335.0" prefWidth="672.0">
+               <children>
+                  <Button layoutX="58.0" layoutY="216.0" mnemonicParsing="false" onAction="#chocBtn" prefHeight="57.0" prefWidth="148.0" text="Chocolate" />
+                  <Button layoutX="269.0" layoutY="216.0" mnemonicParsing="false" onAction="#strawBtn" prefHeight="57.0" prefWidth="135.0" text="Strawberry" />
+                  <Button layoutX="484.0" layoutY="216.0" mnemonicParsing="false" onAction="#vanBtn" prefHeight="57.0" prefWidth="154.0" text="Vanilla" />
+                  <ImageView fitHeight="112.0" fitWidth="165.0" layoutX="41.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/choco.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="124.0" fitWidth="167.0" layoutX="269.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/straw.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="127.0" fitWidth="135.0" layoutX="491.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/vanilla.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="toppingsRoot" layoutX="10.0" layoutY="10.0" prefHeight="335.0" prefWidth="672.0" visible="false">
+               <children>
+                  <Button layoutX="40.0" layoutY="216.0" mnemonicParsing="false" onAction="#chocTopBtn" prefHeight="57.0" prefWidth="148.0" text="Chocolate chips" />
+                  <Button layoutX="201.0" layoutY="216.0" mnemonicParsing="false" onAction="#sprTopBtn" prefHeight="57.0" prefWidth="135.0" text="Sprinkles" />
+                  <Button layoutX="496.0" layoutY="216.0" mnemonicParsing="false" onAction="#nutTopBtn" prefHeight="57.0" prefWidth="154.0" text="Nuts" />
+                  <Button layoutX="347.0" layoutY="216.0" mnemonicParsing="false" onAction="#pepTopBtn" prefHeight="57.0" prefWidth="137.0" text="Peppermint" />
+                  <ImageView fitHeight="108.0" fitWidth="153.0" layoutX="38.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/choc.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="137.0" fitWidth="135.0" layoutX="223.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/sprin.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="111.0" fitWidth="110.0" layoutX="361.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/peper.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="106.0" fitWidth="150.0" layoutX="500.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/nut.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#orderBtn" prefHeight="45.0" prefWidth="190.0" text="Place Order" />
+            <Button mnemonicParsing="false" onAction="#clearBtn" prefHeight="45.0" prefWidth="190.0" text="Clear Order ">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#exitBtn" prefHeight="45.0" prefWidth="100.0" text="Exit">
+               <HBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="335.0" prefWidth="272.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="listView" layoutX="15.0" layoutY="14.0" prefHeight="200.0" prefWidth="243.0" />
+            <Text layoutX="52.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price :" />
+            <Text fx:id="costTotal" layoutX="173.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
